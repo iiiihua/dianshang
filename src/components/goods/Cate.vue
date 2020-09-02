@@ -154,7 +154,6 @@ export default {
     async getCateList () {
       const { data: res } = await this.$http.get('categories', { params: this.queryInfo })
       if (res.meta.status !== 200) return this.$message.error('获取商品分类失败')
-      console.log(res.data)
       // 把获取到的数据列表赋值给catelist
       this.catelist = res.data.result
       // 为总数据条数赋值
@@ -182,7 +181,6 @@ export default {
       const { data: res } = await this.$http.get('categories', { params: { type: 2 } })
       if (res.meta.status !== 200) return this.$message.error('获取父级分类数据失败！')
       this.parentCateList = res.data
-      console.log(this.parentCateList)
     },
     // 选择项发生变化触发这个函数
     parentCateChanged () {
@@ -228,5 +226,7 @@ export default {
   .treeTable{
     margin-top: 50px;
   }
-
+  .el-cascader {
+    width: 100%;
+  }
 </style>
