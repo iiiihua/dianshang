@@ -83,7 +83,6 @@ export default {
       const { data: res } = await this.$http.get('menus')
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
       this.menlist = res.data
-      console.log(res)
     },
     // 点击按钮导航条收缩与展开
     toggleCollapse () {
