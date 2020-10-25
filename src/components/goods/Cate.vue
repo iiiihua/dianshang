@@ -26,7 +26,7 @@
               <el-tag type="warning" size="mini" v-else>三级</el-tag>
             </template>
             <!--操作-->
-            <template slot="opt" slot-scope>
+            <template slot="opt">
               <el-button type="primary" icon="el-icon-edit" size="mini">
                 编辑
               </el-button>
