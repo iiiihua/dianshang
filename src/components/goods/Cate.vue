@@ -26,14 +26,6 @@
               <el-tag type="warning" size="mini" v-else>三级</el-tag>
             </template>
             <!--操作-->
-            <template slot="opt">
-              <el-button type="primary" icon="el-icon-edit" size="mini">
-                编辑
-              </el-button>
-              <el-button type="danger" icon="el-icon-delete" size="mini">
-                删除
-              </el-button>
-            </template>
           </tree-table>
           <!--分页区域-->
           <el-pagination
@@ -109,12 +101,6 @@ export default {
         type: 'template',
         // 表示这一列使用模版名称
         template: 'order'
-      }, {
-        label: '操作',
-        // 表示,将当前列定义为模版列
-        type: 'template',
-        // 表示这一列使用模版名称
-        template: 'opt'
       }
       ],
       // 控制添加分类对话框的显示与隐藏
