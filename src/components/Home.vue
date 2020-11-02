@@ -3,8 +3,7 @@
     <!--头部区域-->
     <el-header>
       <div>
-        <img src="../assets/logo.png" alt="">
-        <span>后台管理</span>
+        <span>Free-Shop 后台管理</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button></el-header>
     <!--页面主体区域-->
@@ -112,9 +111,6 @@ export default {
       span{
         margin-left: 30px;
       }
-    }
-    img{
-      height: 60px;
     }
   }
   .el-aside{
